@@ -33,11 +33,14 @@ div{
   text-align: center;
   float: right;
   display: inline-block;
+
 }
 .data-container{
   border: 2px solid #29b8f7;
+  border-radius: 50px;
   margin-right: 30%;
   margin-left: 30%;
+
 
 }
 
@@ -87,3 +90,29 @@ img.logo {
     margin-top:-50%;
     margin-left:-50%;
 }
+
+
+#wrapper {
+    width: 100%;
+    display:block;
+    position:relative;
+    margin-top: 100px;
+    text-align: center;
+    height: auto;
+}
+
+button {
+  overflow:hidden;
+  color: #ff2934;
+    font-family: Montserrat;
+    background: white;
+    border: 3px solid #ff2934;
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 180%;
+    max-height: 100%;
+    width:220px;
+    height: 70px;
+    font-size: 150%;
+    text-align: center;
+  }
