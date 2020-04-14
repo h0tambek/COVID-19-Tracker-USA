@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Coronavirus Tracker</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>COVID-19 Cases in the US</title>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
+    <div class="shadow"><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"><img class="logo" src="img/coronavirus.png" height="60px" align="left"></a>
+</div>
 		<script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type ="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function(drawChart){
+      var options = {"COVID-19 Cases Statistics"};
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
 
   </head>
   <body>
-		<h1 class="title">Coronavirus Information</h1>
-		<h2 class="subtitle">Statistical updates on COVID-19.</h2>
+		<h1 class="title">USA COVID-19 Infections</h1>
+		<h2 class="subtitle">Statistical updates on confirmed COVID-19 Cases</h2>
 		<div class="data-container">
-		 <div class="statis-container">
-			<h4>CASES</h4>
+		 <div class="statis-container" style="margin: 0px 111px 0px 0px;">
+
+			<h4>Cases</h4>
 			<h1 id="cases"></h1>
-			<h4>DEATHS</h4>
+			<h4>Deaths</h4>
 			<h1 id="deaths"></h1>
 			<h4>% of Deaths</h4>
 			<h1 id="percent"></h1>
@@ -28,7 +45,9 @@
 		<h1 id="lastupdate"></h1>
 	</div>
 	</div>
+
 	<h1 class="footer">Information provided by <a href="https://systems.jh.edu/research/public-health/ncov/">
-		John Hopkins University</a><br><br> Website created by Hotambek Yusupov <br>Special thanks to ExpDev07 for his Coronavirus Tracker API. Check that out by clicking <a href="https://github.com/ExpDev07/coronavirus-tracker-api">here</a></h1>
-	  </body>
+		John Hopkins University</a><br>Special thanks to ExpDev07 for his Coronavirus Tracker API, you can check that out by clicking <a href="https://github.com/ExpDev07/coronavirus-tracker-api/">here</a></h1>
+    <iframe src="https://ghbtns.com/github-btn.html?user=hotamautomation&type=follow&count=true" frameborder="0"width="170px" height="20px" align="center"></iframe>
+    </body>
 </html>

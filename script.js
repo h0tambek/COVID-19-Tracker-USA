@@ -11,7 +11,7 @@ function getCovidStats(){ // Fetch ExpDev07's coronavirus-tracker-api
     let deaths = data.location.latest.deaths;
 
     document.getElementById('population').innerHTML = population.toLocaleString('en');
-		document.getElementById('lastupdate').innerHTML = update.substr(0, 10);
+  		document.getElementById('lastupdate').innerHTML = update.substr(0, 10);
 		document.getElementById('cases').innerHTML = confirmedCases.toLocaleString('en');
 		document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
 		document.getElementById('percent').innerHTML = ((Number(deaths)/Number(confirmedCases))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
@@ -20,5 +20,5 @@ function getCovidStats(){ // Fetch ExpDev07's coronavirus-tracker-api
   .catch(function(){
     console.log("Something went wrong, ERROR");
   })
-  setTimeout(getCovidStats, 43200000);
+  setTimeout(getCovidStats, 4200000);
 }

@@ -52,10 +52,38 @@ h4{
   padding-right: 20px;
   padding-bottom: 5px;
 }
+
+
+iframe{
+  position: fixed;
+  left: 50%;
+  bottom:-10px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+
+}
 .footer{
+  position: fixed;
   bottom: 0;
+  width: 100%;
   text-color: #cfcacb;
   font-family: 'Arial';
   font-size :75%;
 
+}
+
+div.shadow {
+    position:fixed;
+    max-width:45%;
+    max-height:45%;
+    top:89%;
+    left:50%;
+    overflow:visible;
+}
+img.logo {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
 }
