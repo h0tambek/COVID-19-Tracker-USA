@@ -92,7 +92,7 @@ img.logo {
 }
 
 
-#wrapper {
+.wrapper {
     width: 100%;
     display:block;
     position:relative;
@@ -115,4 +115,23 @@ button {
     height: 70px;
     font-size: 150%;
     text-align: center;
+  }
+
+button:hover{
+
+  overflow:hidden;
+  color: #29b8f7;
+    font-family: Montserrat;
+    background: white;
+    border: 3px solid #29b8f7;
+    border-radius: 30px;
+    cursor: pointer;
+    max-width: 180%;
+    max-height: 100%;
+    width:230px;
+    height: 80px;
+    font-size: 160%;
+    text-align: center;
+    box-shadow: 3px 3px 5px #29b8f7;
+
   }
